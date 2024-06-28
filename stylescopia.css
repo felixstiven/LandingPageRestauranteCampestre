@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,10 +8,11 @@
     list-style: none;
 }
 body{
-    background-color: #080202;
+    background-color:#563b14ab;
     font-family:"Poppins", sans-serif; 
 }
 
+/** styles the section header**/
 .container{
     max-width: 100%;
     margin: 0 auto;
@@ -44,17 +45,20 @@ body{
 
 .menu{
     position: absolute;
-    top: 20px;
+    top: 1px;
     left: 0;
     right: 0;
     display: flex;
+    padding: 20px;
+    background-color: #563b14ab;
     justify-content: center;
     z-index: 1000;
 }
 
 .navbar{
     display: flex;
-    box-shadow: 0 0 20px #d3d2d2;
+    box-shadow: 0 0 5px;
+    max-width: 100%;
 }
 .menu-1{
     margin-right: 180px;
@@ -70,7 +74,7 @@ body{
     width: 0;
 }
 .logo-2{
-    width: 150px;
+    width: 80px;
 }
 .socials{
     display: flex;
@@ -109,10 +113,12 @@ body{
 
 #menu{
     display: none;
+
 }
 
 .menu-icono{
     width: 25px;
+    margin-right: 20px;
 }
 .menu label{
     cursor: pointer;
@@ -127,51 +133,53 @@ body{
 }
 
 .header-content{
-    display: flex;
-    margin-top: 200px;
+    margin-top: 115px;
     padding-bottom: 50px;
     max-width: 100%;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url(./images/fondodelsol.jpg);
+    background-position: center center;
+    background-size: 100% 700px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+
 }
 
 .slider{
-    font-family: "Gloria Hallelujah", cursive;
-    max-width: 100%;
-    font-weight: 400;
-    font-style: normal;
+    display:flex;
+    flex-direction: column;
     align-items: center;
-    margin-left: 220px;
-    padding: 0;
+    margin: auto;
 
 }
 .slider-txtpr{
-    display: inline-block;
-    margin-left: 15px;
-    margin-top: 45px;
-    margin-bottom: 2px;
+    margin: auto;
+    margin-top: 50px;
 }
 
 .slider-txt{
-    display: block;
-    margin-left: 15px;
     margin-top: 150px;
 }
 
 .slider-txtpr h1{
-    font-size: 70px;
     color:#ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 130px;
     text-transform: uppercase;
-    font-weight: 800;
-    padding: 50px;
-    box-shadow: 0 0 20px #d3d2d2;
+    text-align: center;
 }
 .slider-txt h2{
-    margin: auto;
-    font-size: 60px;
     color:#ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
     text-transform: uppercase;
-    font-weight: 800;
-    padding: 50px;
-    box-shadow: 0 0 20px #d3d2d2;
+    font-size: 50px;
+    text-align: center;
+    padding: 0px;
 }
 
 .slider-img{
@@ -186,14 +194,21 @@ body{
     box-shadow: 0 0 20px #d3d2d2;
 }
 
+/* styles section_container1*/
 
 .section_container1{
-    max-width: 100%;
+    min-width: 10%;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url(/images/entradarestaurante.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .section_container1 .section_container {
     display: block;
-    max-width: 60%;
+    min-width: 1200px;
     margin: auto;
 }
 
@@ -205,6 +220,7 @@ body{
     padding: 10px;
     box-shadow: 0 0 20px #d3d2d2;
     max-width: 50%;
+    
 }
 
 .section_container1 .section_container .section_content .txt{
@@ -228,8 +244,6 @@ body{
     
 }
 
-
-
 .section_container1 .section_container .section_content {
     display: flex;
     max-width: 450px;
@@ -246,7 +260,7 @@ body{
     line-height: 30px;
 }
 .section_container1 .section_container .txt p{
-    color: #8f8787;
+    color: #ffffff;
     display: flex;
     font-size: 19px;
     line-height: 30px;
@@ -271,17 +285,117 @@ body{
     
 }
 
-
-
-
 .section_container1  .img_container img {
     width: 380px;
     height: 380px;
     padding: 3px;
 }
 
+/*styles section_services*/
 
+.section_services{
+    display: inline-block;
+    max-width: 100%;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+}
+.section_services .sectionservices{
+    max-width: 60%;
+    margin: auto;
+    padding: 0;
+}
 
+.title_services h2{
+    color: #ffffff;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    align-items: center;
+    margin-left: 255px;
+    margin-bottom: 25px;
+}
+.title_services p{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: 00;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+}
+
+.section_services .contentservices{
+    margin-top: 40px;
+}
+
+.section_services .contentservices .services_top{
+    display: inline-block;
+    width: 500px;
+    height: 450px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background-color:#867660ab;
+    box-shadow: 0 0 8px;
+    margin-left: 20px;
+}
+.section_services .contentservices .services_top2{
+    width: 500px;
+    height: 550px;
+    margin: auto;
+    border-radius: 25px;
+    background-color:#867660ab;
+    box-shadow: 0 0 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.section_services .contentservices .services_top3{
+    width: 500px;
+    height: 550px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 25px;
+    background-color:#867660ab;
+    box-shadow: 0 0 8px;
+}
+.section_services .contentservices .services_top3 img{
+    width: 220px;
+    height: 220px;
+    margin-left: 22px;
+    border-radius: 25px;
+    background-color:#867660ab;
+}
+
+.section_services .contentservices .services_top img{
+    max-width: 500px;
+    padding: 10px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+
+.section_services .services_top .txtservices{
+    width: 280px;
+    margin: auto;
+}
+.section_services .services_top .txtservices h2{
+
+    font-family: sans-serif;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+.section_services .services_top .txtservices a{
+    font-family: sans-serif;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 11px;
+    margin-left: 50px;
+}
+
+/* style info amparo */
 .info{
     padding: 100px 0;
     display: flex;
@@ -291,8 +405,9 @@ body{
     width: 50%;
 }
 .info-img img{
-    width: 500px;
-    height: 250px;
+    width: 400px;
+    height: 600px;
+    margin-left: 195px;
 }
 .info-txt{
     width: 50%;
@@ -306,8 +421,10 @@ body{
 
 .info-txt p{
     font-size: 18px;
-    color: #a7a7a7;
+    color: #ffffff;
     margin-bottom: 50px;
+    margin-right: 40px;
+    line-height: 35px;
 }
 
 .btn-2{
@@ -380,13 +497,13 @@ body{
 }
 
 
-@media(max-width:991px){
+@media(max-width:991px){ 
     .menu{
         padding: 20px;
-        justify-content: space-between;
+        width: 800px;;
     }
     .menu-2{
-        display: none;
+        display:none;
     }
     .logo-1{
         width: 100px;
@@ -509,4 +626,4 @@ body{
         margin: 25px 0px 10px 0px;
     }
 
-}
+} 
