@@ -125,7 +125,6 @@ header{
     flex-direction: column;
     
 }
-
 .slider-txtpr{
     display: flex;
     width: 100%;
@@ -139,7 +138,6 @@ header{
     text-transform: uppercase;
     color:rgba(234, 119, 70, 0.751);
 }
-
 .slider-txt{
     display: flex;
     height: 85px;
@@ -158,67 +156,91 @@ header{
 /* styles section_container1*/
 
 .section_container1{
-    max-width: 100%;
-    height: 640px; 
+    height: 800px; 
     background-color: rgba(234, 119, 70, 0.751);
     display: flex;
-    margin: auto;
+    align-items: center;
     
 }
 
 .section_container1  .section_content{
-    max-width: 100%;
+    width: 45%;
     display: flex;
-    padding-top: 15px;
-    margin: 4px;
+    background-color:#2e2f34;
+}
+.section_container1 .container-txt{
+    border-right: 1px solid #ddd;
+    padding: 15px;
 }
 
-.section_container1  .section_content .txt{
-    display:flex;
+.section_container1 .section_content .container-txt .container-img{
+    position: relative;
+    display:block ;
+}
+.section_container1 .section_content .container-txt h2{
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 2px 20px;
+}
+.section_container1 .section_content .container-txt p{
+    color: #ffffff;
+    font-size: 18px;
+    padding: 2px 5px;
+}
+.section_container1 .section_content .container-img img{
+    border-radius: 10%;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+.section_container1 .section_content .siguenos{
+    margin-top: 20px;
+}
+.btn-1{
+    background-color: #db241b;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 10px 35px;
+    
+}
+
+
+
+
+
+
+/* .section_container1  .section_content .txt{
+    display: flex;
+    flex-wrap:nowrap;
+    align-content:baseline;
     background-color: #2e2f34;
     padding: 25px; 
     height: 600px; 
     border-radius: 2.5rem;   
-}
+} */
 
-.section_container1  .section_content .txt h2{
-    position: absolute;
+/* .section_container1  .section_content .txt h2{
+    background-color: antiquewhite;
     height: 100px;
     width: 330px;
     font-size: 30px;
     font-weight: bold;
-}
-.section_container1  .section_content .txt p{
-    position: relativ;
-    margin-top: 220px;
-    font-size: 15px;
-    font-weight: 100px;
-}
+    flex-direction: column;
+} */
 
-.section_container1  .section_content .txt img{
-    width: 400px;
-    height: 510px;
-    margin-left: 20px;
+
+.btn-1{
+    background-color: #db241b;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-left: 0;
     
-}
-
-
-
-
-
-
-/* .header-content .img_container{
-    width: 280px;
-    height: 280px;
-    padding: 0;
-    
-    
-}
-
-.section_container1  .img_container img {
-    width: 380px;
-    height: 380px;
-    padding: 3px;
 }
 
 /*styles section_services*/
