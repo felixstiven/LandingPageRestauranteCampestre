@@ -56,54 +56,6 @@ header{
     color: #ffffff;
 }
 
-@media(max-width:900px){
-    .header{
-        padding: 0px 30px;
-
-    }
-    .bars{
-        display: block;
-        cursor: pointer;
-    }
-
-    .bars .line{
-        width: 30px;
-        height: 3px;
-        background-color: #ffffff;
-        margin: 6px 0px;
-    }
-    .nav-bar {
-        height: 0px;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        background-color: #2e2f34;
-        transition: 0.5s;
-        overflow: hidden;
-    }
-
-    .nav-bar .active{
-        height: 450px;
-    }
-
-    .nav-bar ul {
-        display: block;
-        width: fit-content;
-        margin: 80px auto 0 auto;
-        text-align: center;
-        transition: 0.5s;
-        opacity: 0;
-    }
-    .nav-bar .active ul{
-        opacity: 1;
-    }
-    .nav-bar ul li a{
-        margin-bottom: 20px;
-    }
-}
-
 .contentprincp{
     background-image: url(images/imagenfondo-1024x768.jpg);
     background-repeat: no-repeat;
@@ -146,13 +98,6 @@ header{
     font-weight: bold;
     color:#ffffff;
     text-transform: uppercase;
-}
-
-@media(max-width:500px){
-    .slider-txt{
-        font-size: 15px;
-        text-align: center;
-    }
 }
 
 /* styles section_container1*/
@@ -317,6 +262,8 @@ header{
     align-items: center;
 }
 .info-img{
+    background-color: #db241b;
+    height: 600px;
     display: flex;
     margin-left:60px;
     box-shadow: 0px 0px 7px #ffffff;
@@ -460,7 +407,56 @@ header{
 }
 
 
-@media(max-width:600px){
+
+
+
+@media(max-width:900px){
+    .header{
+        padding: 0px 30px;
+
+    }
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+
+    .bars .line{
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 6px 0px;
+    }
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #2e2f34;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar .active{
+        height: 450px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar .active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 20px;
+    }
+    
     .slider-txtpr{
         padding: 10px;
         display: flex;
@@ -469,22 +465,77 @@ header{
     .slider-txt{
         margin-bottom:55px;
     }
-    }
-
-@media(max-width:1000px){
     .section_container1{
         height: auto;
         display: flex;
         flex-direction: column;
     }
     .section_container1 .section_content{
-        width: 600px;
-        height: 500px;
+        width: auto;
+        height: auto;
     }
     .section_container1 .section_content .section-img img{
         background-color: #ffffff;
-        border-radius: 50%;
+    }
+
+    .section_container1 .section_content .container-txt h2{
+        margin-bottom: 135px ;
+    }
+
+    .section_services {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section_services .sectionservices{
+        display: flex;
+        flex-direction: column;
+    }
+    .section_services .sectionservices .title_services{
+        margin: auto;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .section_services .sectionservices .title_service p{
+        margin: auto;
+        text-align: justify;  
+    }
+
+    .section_services .contentservices{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+    .section_services .contentservices .services_top{
+        margin-bottom: 10px;
+    }
+    .info{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .info .info-img{
+        margin: auto;
+        margin-top: 55px;
 
     }
+    
+    .info-img img{
+        height: 600px;
+        width: 500px;
+
+    }
+    .info .info-txt{
+        margin: auto;
+    }
+
+    .info .btn-3{
+        margin:auto
+}
+
+
 
 }

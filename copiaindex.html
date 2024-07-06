@@ -87,7 +87,7 @@
                 <div class="services_top  services_to">
                     <img src="/images/cocido-boyacense.jpg" alt="">
                         <h2>Nuestro Platos</h2>
-                        <a class="btn-2" href="darUnPaseo/index.html">Consultar</a>
+                        <a  class="btn-2" href="darUnPaseo/index.html">Consultar</a>
                 </div>
             </div>
         </div>
@@ -102,7 +102,8 @@
                 Es chef y copropietaria de restaurante campestre "la granja de valeria". 
                 <br>Desde muy temprana edad, Amparo descubrio el amor por los fogones y el arte culinario, preparando deliciosos platos de la cocina tradicional. Su cocina busca resaltar los ingredientes, sabores y tecnicas de la gastronomia local, mezcalndolos con una cocina creativa y de vanguardia, donde predomina el sabor autentico,Todos sus platos son cocinados a leña. 
             </p>
-                <a href="#" class="btn-3">Mas Informacion</a>
+                <a onclick='saludar("stiven ", "felix")'href="#" class="btn-3">Mas Informacion</a>
+                <div id="divSaludar"> hola te voy a saludar</div>
         </div>
     </section>
     <section class="horario" id="horario">
@@ -122,7 +123,6 @@
                     <h4>Horario</h4>
                     <p>
                         Sabados,domingos y festivos : 8am - 6pm
-
                     </p>
                     <p>
                         Lunes a viernes: cerrado
@@ -203,6 +203,20 @@
         </ul>
         <p class="text">@Año | Todos los derechos reservados</p>
     </footer>
-    <script src="script.js"></script> 
+    <script>
+
+        function saludar(nombre, apellido){
+            console.log("Hola " + nombre + "" + apellido);
+            alert("Hola " + nombre +"" + apellido);
+            alert("¿como estas?")
+       
+
+        var divSaludar = document.getElementById("divSaludar")
+        divSaludar.innerText = "Hola " + nombre +"" + apellido;
+        // saludar("damian ", "perez")
+        // saludar("stiven ", "felix")
+        // saludar("damian ", "alvis")
+        }
+    </script> 
 </body>
 </html>
