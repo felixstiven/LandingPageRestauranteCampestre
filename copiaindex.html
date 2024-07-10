@@ -104,6 +104,30 @@
                 <a href="#" class="btn-3">Mas Informacion</a>
         </div>
     </section>
+    <section class="section_contacto">
+        <h2>contacto</h2>
+        <div class="contacto">
+            <form class="form" action="" method="post">
+
+                <ul>
+                    <li>
+                        <label for="">Nombre</label>
+                        <input type="text" name="user_name" id="name">
+                    </li>
+                    <li>
+                        <label for="">Email</label>
+                    <input type="email" name="user_mail" id="mail" value="@gmail">
+                    </li>
+                    <li>
+                        <label for="">Mensaje</label>
+                        <textarea name="user_msg" id="msg">Deja tu mensaje</textarea>
+                    </li>
+                    <button class="btn-2">enviar</button>
+                </ul>
+            </form>
+        </div>
+
+    </section>
     <section class="horario" id="horario">
         <div class="horario-info container">
             <h2>horario</h2>
@@ -201,20 +225,5 @@
         </ul>
         <p class="text">@Año | Todos los derechos reservados</p>
     </footer>
-    <script>
-
-        function saludar(nombre, apellido){
-            console.log("Hola " + nombre + "" + apellido);
-            alert("Hola " + nombre +"" + apellido);
-            alert("¿como estas?")
-       
-
-        var divSaludar = document.getElementById("divSaludar")
-        divSaludar.innerText = "Hola " + nombre +"" + apellido;
-        // saludar("damian ", "perez")
-        // saludar("stiven ", "felix")
-        // saludar("damian ", "alvis")
-        }
-    </script> 
 </body>
 </html>
