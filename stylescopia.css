@@ -479,7 +479,7 @@ header{
     font-size: 20px;
 }
 
-@media(max-width:1278px){
+@media(max-width:1029px){
     .header{
         padding: 0px 30px;
 
@@ -562,13 +562,18 @@ header{
 
     .section_services {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: start;
         height: auto;
+        align-items: start;
     }
 
     .section_services .sectionservices{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
     }
     .section_services .sectionservices .title_services{
         margin: auto;
@@ -628,7 +633,7 @@ header{
 
 } 
 
-@media(max-width:619px){
+@media(max-width:624px){
     .header{
         padding: 0px 30px;
 
@@ -771,12 +776,16 @@ header{
         margin:auto
 }
 
-.horario .txt{
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    margin-left: 2px;
+.horario-info{
+    display: flex;
+    flex-direction: column;
 }
+.horario-info .horario-txt{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 
 } 
